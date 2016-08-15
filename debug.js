@@ -1,4 +1,4 @@
-$(function()
+(function()
 {
     var debug = window.AOPDebugger = window.AOPDebugger || {};
 
@@ -98,4 +98,4 @@ $(function()
         debugObj[ funcName ] = modifiedFunc(funcName, debugObj[funcName]);
     }
     return debug;
-});
+})();

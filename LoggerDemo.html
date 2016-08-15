@@ -1,0 +1,24 @@
+<html>
+    <script src="debug.js">
+
+    </script>
+    <script>
+        window.MyModule = window.MyModule || {};
+
+        MyModule.methodOne = function()
+        {
+          console.log('Module Method one');
+        };
+        MyModule.methodTwo = function()
+        {
+            console.log('Module Method two');
+        };
+
+        //This line activate logging
+        AOPDebugger.watch( MyModule,'MyModule');
+
+        MyModule.methodOne();
+        MyModule.methodTwo();
+
+    </script>
+</html>
