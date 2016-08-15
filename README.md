@@ -33,3 +33,4 @@ Above code automatically add console.log to methodOne and methodTwo, so no need 
 and easy to remove logging. in one line by uncommenting this following line
 
 AOPDebugger.watch( MyModule,'MyModule');
+ 
